@@ -9,7 +9,7 @@ def go_default(error):
 ### Real sh1t ###
 @route('/')
 def landing():
-     print("i'm world |m|," flush=True)
+     print("i'm world |m|", flush=True)
      print(f'addr: {request.remote_addr} and route: {request.remote_route} in bottle :D', flush=True)
      return static_file('index.html', root='.')
 
